@@ -1,0 +1,195 @@
+/* ******* Reset ******* */
+
+html {
+    box-sizing: border-box;
+    font-family: ubuntu;
+    font-size: 16px;
+    scroll-behavior: smooth;
+ }
+
+ *,
+ *::after,
+ *::before {
+    box-sizing: inherit;
+ }
+
+
+ body {
+    margin: 0;
+    overflow-x: hidden;
+ }
+
+
+/* ***** header  ****** */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    /* background-color: #090909;
+    opacity: .8; */
+    /* background-color: transparent; */
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.header h1 {
+    opacity: .7;
+}
+
+.header-icon a {
+    text-decoration: none;
+}
+
+.header-icon i {
+    color: #fff;
+    opacity: .7;
+    padding-left: 2rem;
+    font-size: 1.3rem;
+}
+
+/* ***** home ***** */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(assets/img-home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color:rgba(0, 0, 0, 0.9); */
+    display: flex;
+    justify-content: center;
+}
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-content h2 {
+    font-size: 9rem;
+    letter-spacing: 6px;
+    color: #fd3a2d;
+}
+
+.home-content h4 {
+    font-size: 3rem;
+    color: #fd3a2d;
+    opacity: .7;
+    align-self: center;
+}
+
+/* ***** banner ***** */
+
+.banner {
+    margin-top: 3rem;
+}
+
+.banners {
+    display: flex;
+    justify-content: space-evenly; 
+    width: 100vw;
+    background-color: rgba(9,9,9,0.1);
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.slide {
+    flex-wrap: nowrap;
+}
+
+.slide i {
+    font-size: 40px;
+    color: #fd3a2d;
+    transition: 1s;
+}
+
+
+.slide i:hover {
+    opacity: .7;
+}
+
+.slide h3 {
+    opacity: .8;
+    transition: 1s;
+}
+
+.slide p {
+    opacity: .8;
+}
+
+.slide h3:hover {
+    opacity: 10;
+}
+
+.slide p:hover {
+    opacity: 10;
+
+}
+
+/* ***** destacadas ***** */
+
+.destacados {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.destacados h2 {
+    /* font-weight: 500; */
+    align-self: center;
+    font-size: 3rem;
+    opacity: .8;
+    transition: .5s;
+}
+
+.destacados h2:hover {
+    opacity: 10;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    overflow: hidden;
+    position: relative;
+    height: 600px;
+    width: 450px;
+    margin: 1rem;
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.50);
+    transition: 0.5s;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.card h4 {
+    text-align: center;
+    font-size: 2rem;
+    position: absolute;
+    right: 10%;
+    color: rgba(9,9,9,0.5);
+    transition: all .5 ease-in-out;
+}
+
+
+
