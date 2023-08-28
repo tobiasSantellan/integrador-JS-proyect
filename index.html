@@ -16,11 +16,9 @@
     <header class="header">
         <h1>MI TIENDA FRONT</h1>
         <div class="header-icon">
-            <a href=""><i class="fa-solid fa-user"></i></a>
-            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i> <span class="numerito">0</span></a>
         </div>
     </header>
-    <!-- HEADER END -->
     <main>
         <!-- HOME START -->
         <section class="home">
@@ -29,7 +27,6 @@
                 <h4>ONLINE & EN LOCALES</h4>
             </div>
         </section>
-        <!-- HOME END -->
         <!-- BANNER START -->
         <section class="banner">
             <div class="banners">
@@ -57,26 +54,61 @@
                 <!-- BANNERS CONTENT END -->
             </div>
         </section>
-      <!-- BANNER END -->
       <!-- DESCATADOS START -->
       <section class="destacados">
         <h2>Destacados</h2>
         <div class="card-container">
             <div class="card">
                 <h4>Bomber Jacket</h4>
-                <img src="assets/bomber-img.jpg" alt="bomber">
+                <img class="card-img" src="assets/bomber-img.jpg" alt="bomber">
             </div>
             <div class="card">
                 <h4>Jean Faded</h4>
-                <img src="assets/jean-img.jpg" alt="jean">
+                <img class="card-img" src="assets/jean-img.jpg" alt="jean">
             </div>
             <div class="card">
                 <h4>Buzo Broken</h4>
-                <img src="assets/buzo-img.jpg" alt="buzo">
+                <img class="card-img" src="assets/buzo-img.jpg" alt="buzo">
             </div>
         </div>
       </section>
-      <!-- DESTACADOS END -->
+      <!-- TODOS LOS PRODUCTOS START -->
+      <section class="productos" id="productos">
+        <ul class="ul">
+            <li><button  class="boton-categoria active" >Todos los productos</button></li>
+            <li><button  class="boton-categoria">Buzos</button></li>
+            <li><button  class="boton-categoria">Camperas</button></li>
+            <li><button  class="boton-categoria">Pantalones</button></li>
+            <li><button  class="boton-categoria">Remeras</button></li>
+        </ul>
+      </section>
+      <section class="contenedor-productos">
+        <div class="producto">
+            <img class="producto-imagen" src="assets/buzo-1.jpg" alt="">
+            <div class="producto-detalles">
+                <h3 class="producto-titulo">Buzo 01</h3>
+                <p class="producto-precio">$1000</p>
+                <button class="producto-agregar">Agregar</button>
+            </div>
+        </div>
+        <div class="producto">
+            <img class="producto-imagen" src="assets/buzo-2.jpg" alt="">
+            <div class="producto-detalles">
+                <h3 class="producto-titulo">Buzo 02</h3>
+                <p class="producto-precio">$1000</p>
+                <button class="producto-agregar">Agregar</button>
+            </div>
+        </div>
+        <div class="producto">
+            <img class="producto-imagen" src="assets/buzo-3.jpg" alt="">
+            <div class="producto-detalles">
+                <h3 class="producto-titulo">Buzo 03</h3>
+                <p class="producto-precio">$1000</p>
+                <button class="producto-agregar">Agregar</button>
+            </div>
+        </div>
+        
+      </section>
     </main>
 </body>
 <script src="main.js"></script>
