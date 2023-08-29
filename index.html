@@ -16,7 +16,7 @@
     <header class="header">
         <h1>MI TIENDA FRONT</h1>
         <div class="header-icon">
-            <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i> <span class="numerito">0</span></a>
+            <a class="boton-carrito" href="carrito.html"><i class="fa-solid fa-cart-shopping"></i> <span id="numerito" class="numerito">0</span></a>
         </div>
     </header>
     <main>
@@ -75,39 +75,15 @@
       <!-- TODOS LOS PRODUCTOS START -->
       <section class="productos" id="productos">
         <ul class="ul">
-            <li><button  class="boton-categoria active" >Todos los productos</button></li>
-            <li><button  class="boton-categoria">Buzos</button></li>
-            <li><button  class="boton-categoria">Camperas</button></li>
-            <li><button  class="boton-categoria">Pantalones</button></li>
-            <li><button  class="boton-categoria">Remeras</button></li>
+            <li><button id="todos" class="boton-categoria active" >Todos los productos</button></li>
+            <li><button id="buzos" class="boton-categoria">Buzos</button></li>
+            <li><button id="camperas" class="boton-categoria">Camperas</button></li>
+            <li><button id="pantalones" class="boton-categoria">Pantalones</button></li>
+            <li><button id="remeras" class="boton-categoria">Remeras</button></li>
         </ul>
       </section>
-      <section class="contenedor-productos">
-        <div class="producto">
-            <img class="producto-imagen" src="assets/buzo-1.jpg" alt="">
-            <div class="producto-detalles">
-                <h3 class="producto-titulo">Buzo 01</h3>
-                <p class="producto-precio">$1000</p>
-                <button class="producto-agregar">Agregar</button>
-            </div>
-        </div>
-        <div class="producto">
-            <img class="producto-imagen" src="assets/buzo-2.jpg" alt="">
-            <div class="producto-detalles">
-                <h3 class="producto-titulo">Buzo 02</h3>
-                <p class="producto-precio">$1000</p>
-                <button class="producto-agregar">Agregar</button>
-            </div>
-        </div>
-        <div class="producto">
-            <img class="producto-imagen" src="assets/buzo-3.jpg" alt="">
-            <div class="producto-detalles">
-                <h3 class="producto-titulo">Buzo 03</h3>
-                <p class="producto-precio">$1000</p>
-                <button class="producto-agregar">Agregar</button>
-            </div>
-        </div>
-        
+      <section id="contenedor-productos" class="contenedor-productos">
+        <!-- Renderizado en JS -->
       </section>
     </main>
 </body>
