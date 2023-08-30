@@ -18,12 +18,8 @@ const isBetween = (input, min, max) => {
 
 const isEmailValid = (input) => {
     const re =  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;;
-    //testeamos
+
     return re.test(input.value.trim());
-  };
-  
-const isExistingEmail = (input) => {
-    return users.some((user) => user.email === input.value.trim());
   };
   
 const isPassSecure = (input) => {
