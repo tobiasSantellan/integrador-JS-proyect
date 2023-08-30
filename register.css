@@ -1,0 +1,114 @@
+body {
+    background-image: url(assets/img-home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'ubuntu', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header-titulo a {
+    text-decoration: none;
+    color: #090909;
+    opacity: .8;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    background-color: #090909;
+    opacity: .8;
+    height: 500px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 0 4rem;
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+  
+  .form__title {
+    margin-bottom: 10px;
+  }
+  
+  .form-input {
+    padding: 15px 35px 15px 15px;
+    border-radius: 8px;
+    background-color: #252525;
+    color: #fff;
+    outline: none;
+    border: none;
+    width: 350px;
+    margin: 5px 0px;
+  }
+  
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 90px #252525 inset !important;
+  }
+  input:-webkit-autofill {
+    -webkit-text-fill-color: #fff !important;
+  }
+  
+  .form-submit-btn {
+    font-size: 0.9rem;
+    background-color: #fd3a2d;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 350px;
+    margin-top: 2rem;
+  }
+  
+  .form-field.error input {
+    border: 1px solid #dc3545;
+  }
+  
+  .form-field small {
+    color: #dc3545;
+    max-width: 350px;
+    text-align: center;
+    display: none;
+  }
+  
+  .form-field.success input {
+    border: 1px solid #28a745;
+  }
+  
+  #form__error {
+    color: #dc3545;
+    font-size: 1rem;
+    margin: 8px 0px;
+    max-width: 350px;
+    text-align: center;
+  }
+
+ .success-message {
+    color: #28a745;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+ }
+
+ .disabled {
+    display: none;
+ }

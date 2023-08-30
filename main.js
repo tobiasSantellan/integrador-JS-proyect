@@ -247,6 +247,7 @@ const productos = [
 ]
 
 const d = document;
+const w = window;
 const header = d.querySelector(".header");
 const contenedorProductos = d.querySelector("#contenedor-productos");
 const botonesCategorias = d.querySelectorAll(".boton-categoria");
@@ -254,9 +255,9 @@ let botonesAgregar = d.querySelectorAll(".producto-agregar");
 const numerito = d.querySelector("#numerito");
 
 
-const headerScroll = () => (window.scrollY > 0) ? header.style.backgroundColor = "#090909" : header.style.backgroundColor = "transparent"
+const headerScroll = () => (w.scrollY > 0) ? header.style.backgroundColor = "#090909" : header.style.backgroundColor = "transparent"
     
-window.addEventListener("scroll", headerScroll);
+w.addEventListener("scroll", headerScroll);
 
 
 function cargarProductos (productosElegidos)  {
