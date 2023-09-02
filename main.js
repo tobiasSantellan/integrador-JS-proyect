@@ -249,15 +249,58 @@ const productos = [
 const d = document;
 const w = window;
 const header = d.querySelector(".header");
+const banners = d.querySelector('#banners');
+let sliderSection = d.querySelectorAll(".slide")
+let sliderSectionLast = sliderSection[sliderSection.length -1] //obtener el ultimo elemento (div)
+const btnLeft = document.querySelector('#btn-left')
+const btnRight = document.querySelector('#btn-right')
 const contenedorProductos = d.querySelector("#contenedor-productos");
 const botonesCategorias = d.querySelectorAll(".boton-categoria");
 let botonesAgregar = d.querySelectorAll(".producto-agregar");
 const numerito = d.querySelector("#numerito");
 
-
 const headerScroll = () => (w.scrollY > 0) ? header.style.backgroundColor = "#090909" : header.style.backgroundColor = "transparent"
     
 w.addEventListener("scroll", headerScroll);
+
+
+
+banners.insertAdjacentElement('afterbegin', sliderSectionLast) //adjudico como primer hijo al contenedor general
+
+
+const nextImg = () => {
+    let sliderSectionFirst = document.querySelectorAll('.slide')[0] //pido el primer elemento del contanedor general
+    banners.style.marginLeft = '-190%' //siguiente imagen
+    banners.style.transition = 'all 0.5s'
+    setTimeout(() => {
+        banners.style.transition = 'none'
+        banners.insertAdjacentElement('beforeend', sliderSectionFirst)
+        banners.style.marginLeft = '-100%' //retornar valor original de la imagen
+    }, 500)
+}
+
+
+const prevImg = () => {
+    let sliderSection = document.querySelectorAll('.slide')
+    let sliderSectionLast = sliderSection[sliderSection.length -1]
+
+    banners.style.marginLeft = '0%' 
+    banners.style.transition = 'all 0.5s ease'
+    setTimeout(() => {
+        banners.style.transition = 'none'
+        banners.insertAdjacentElement('afterbegin', sliderSectionLast)
+        banners.style.marginLeft = '-100%' //siguiente imagen
+    }, 500)
+}
+
+btnRight.addEventListener('click', () => {
+    nextImg();
+})
+
+btnLeft.addEventListener('click', () => {
+    prevImg();
+})
+
 
 
 function cargarProductos (productosElegidos)  {

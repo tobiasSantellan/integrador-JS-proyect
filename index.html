@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="media-queries.css">
 <script src="https://kit.fontawesome.com/d119f05203.js" crossorigin="anonymous"></script>
 
     <title>Tienda Front</title>
@@ -29,29 +30,34 @@
         </section>
         <!-- BANNER START -->
         <section class="banner">
-            <div class="banners">
-                <!-- BANNERS CONTENT START -->
-                <div class="slide">
-                        <i class="fa-solid fa-dolly"></i>
-                        <h3>ENVÍOS SIN CARGO</h3>
-                        <p>Para compras a partir de $50.000</p>
+            <div class="banner-container-slider">
+                <div class="banners" id="banners">
+                    <!-- BANNERS CONTENT START -->
+                    <div class="slide">
+                            <i class="fa-solid fa-dolly"></i>
+                            <h3>ENVÍOS SIN CARGO</h3>
+                            <p>Para compras a partir de $50.000</p>
+                    </div>
+                    <div class="slide">
+                            <i class="fa-solid fa-credit-card"></i>
+                            <h3>3 y 6 CUOTAS SIN INTERÉS</h3>
+                            <p>Con todas las tarjetas</p>
+                    </div>
+                    <div class="slide">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <h3>CONTACTATE POR WHATSAPP</h3>
+                            <p>Te asesoramos con tu compra</p>
+                    </div>
+                    <div class="slide">
+                            <i class="fa-solid fa-comment"></i>
+                            <h3>PROMOCIONES IMPERDIBLES</h3>
+                            <p>Aprovechá nuestras ofertas</p>
+                    </div>
+                    <!-- BANNERS CONTENT END -->
                 </div>
-                <div class="slide">
-                        <i class="fa-solid fa-credit-card"></i>
-                        <h3>3 y 6 CUOTAS SIN INTERÉS</h3>
-                        <p>Con todas las tarjetas</p>
-                </div>
-                <div class="slide">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <h3>CONTACTATE POR WHATSAPP</h3>
-                        <p>Te asesoramos con tu compra</p>
-                </div>
-                <div class="slide">
-                        <i class="fa-solid fa-comment"></i>
-                        <h3>PROMOCIONES IMPERDIBLES</h3>
-                        <p>Aprovechá nuestras ofertas</p>
-                </div>
-                <!-- BANNERS CONTENT END -->
+                <!--BUTTONS-->
+                  <div class="slider__btn slider__btn--right" id="btn-right">&#62</div>
+                  <div class="slider__btn slider__btn--left" id="btn-left">&#60</div>
             </div>
         </section>
       <!-- DESCATADOS START -->
@@ -66,7 +72,7 @@
                 <h4>Jean Faded</h4>
                 <img class="card-img" src="assets/jean-img.jpg" alt="jean">
             </div>
-            <div class="card">
+            <div class="card last-card">
                 <h4>Buzo Broken</h4>
                 <img class="card-img" src="assets/buzo-img.jpg" alt="buzo">
             </div>
