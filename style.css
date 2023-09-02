@@ -412,7 +412,9 @@ html {
     display: none;
 }
 
-/* ***** registro ***** */
+
+
+/* ***** footer **** */
 
 .registro {
     margin-top: 5rem;
@@ -458,25 +460,36 @@ html {
     font-size: 2rem;
 }
 
-/* ***** footer **** */
 
-.footer {
+.social-media {
     background-color: rgba(9,9,9,0.1);
-    height: 250px;
-    margin-top: 3rem;
-}
-
-/* .footer-contactanos {
-   
-} */
-
-.footer-contactanos-titulo {
     margin-top: 2rem;
+    justify-content: center;
 }
 
-.footer-contactanos-info {
-    /* display: flex;
-    flex-direction: column; */
+.social-media-text-box {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+.social-media-info-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+
+.social-media-info-contact i {
+    font-size: 2rem;
+    color: #333;
+    transition: .2s ease-in;
+}
+
+.social-media-info-contact i:hover {
+    color: #fd3a2d;
 }
