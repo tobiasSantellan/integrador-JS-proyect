@@ -25,6 +25,16 @@
         align-items: center;
     }
 
+    .slider__btn--left {
+        left: 10px; /*posición botones con respecto al position absolute*/
+        display: block;
+    }
+    
+    .slider__btn--right {
+        right: 10px; /*posición botones con respecto al position absolute*/
+        display: block;
+    }
+
     .contenedor-productos {
         grid-template-columns: repeat(2, 1fr);
     }
