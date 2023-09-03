@@ -138,4 +138,35 @@
     .registro-contenido-parrafo {
         font-size: .7rem;
     }
+
+    .form-container {
+        width: 100%;
+        height: 500px;
+    }
+
+    .form-input {
+        width: 300px;
+    }
+
+    .form-submit-btn {
+        width: 250px;
+    }
+
+    .carrito-producto {
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .carrito-producto small {
+        text-align: center;
+    }
+
+    .carrito-acciones {
+        gap: 1rem;
+        margin: .5rem;
+    }
+
+    .carrito-acciones-derecha {
+        width: 90%;
+    }
 }

@@ -1,3 +1,20 @@
+/* ******* Reset ******* */
+
+html {
+  box-sizing: border-box;
+  font-family: ubuntu;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+
+
 body {
     background-image: url(assets/img-home.jpg);
     background-position: center;
