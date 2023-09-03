@@ -152,6 +152,11 @@
         width: 250px;
     }
 
+    .success-message {
+        margin-top: 5rem;
+        font-size: 1.2rem;
+    }
+
     .boton-volver {
         margin-right: 3rem;
     }
