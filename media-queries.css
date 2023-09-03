@@ -173,4 +173,11 @@
     .carrito-acciones-derecha {
         width: 90%;
     }
+
+    .carrito-vacio,
+    .carrito-comprado {
+        width: 90%;
+        opacity: .9;
+        font-size: 1.5rem;
+    }
 }
