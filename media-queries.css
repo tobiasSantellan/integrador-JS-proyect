@@ -152,6 +152,10 @@
         width: 250px;
     }
 
+    .boton-volver {
+        margin-right: 3rem;
+    }
+
     .carrito-producto {
        flex-direction: column;
        align-items: center;
