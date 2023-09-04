@@ -93,6 +93,7 @@
 @media (max-width: 370px) {
     .header {
         justify-content: space-between;
+        /* position: relative; */
     }
 
     .header h1 {
@@ -100,6 +101,8 @@
     }
 
     .nav {
+        display: block;
+        height: 70px;
 
         --img1: scale(1);
         --img2: scale(0);
@@ -115,18 +118,17 @@
 
     .nav-container {
         width: 90%;
+        height: 70px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: max-content;
         grid-template-areas: icon;
-        /* align-items: center; */
-        /* height: 70px; */
     }
 
     .nav-menu {
-        position: relative;
+         position: relative; 
         z-index: 10;
-        margin-right: .2rem;
+        margin-right: .7rem;
         /* margin-bottom: .2rem; */
         text-decoration: none;
         color: #fff;
@@ -154,7 +156,7 @@
          /* max-width: 300px;  */
         height: 100vh;
         right: 0;
-        top: 0;
+        top: 0; 
         bottom: 0; 
 
         /* display: grid;
@@ -287,8 +289,13 @@
         width: 250px;
     }
 
+    .header-titulo a {
+        margin-left: 4rem;
+    }
+
     .success-message {
         margin-top: 5rem;
+        margin-left: 3.8rem;
         font-size: 1.2rem;
     }
 
