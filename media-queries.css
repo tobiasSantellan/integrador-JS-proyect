@@ -165,7 +165,7 @@
         justify-content: center;
         gap: 1rem;  
         padding: 1em;
-        margin-top: 0; /*boluces que me hizo renegar mas de una hora*/
+        margin-top: 0; 
 
         clip-path: var(--clip, inset(0 0 100% 100%));
         transition: clip-path .5s;
