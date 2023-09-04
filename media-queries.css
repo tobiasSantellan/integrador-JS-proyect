@@ -288,14 +288,18 @@
         width: 250px;
     }
 
-    .header-titulo a {
+    .header-register {
+        margin: 0 auto;
+    }
+
+    /* .header-titulo a {
         margin-top: 3rem;
         margin-left: 4rem;
-    }
+    } */
 
     .success-message {
         margin-top: 5rem;
-        margin-left: 3.8rem;
+        margin-left: 1rem;
         font-size: 1.2rem;
     }
 

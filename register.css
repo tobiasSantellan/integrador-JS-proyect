@@ -25,7 +25,7 @@ body {
     overflow: hidden;
 }
 
-.header {
+.header-register {
     display: flex;
     justify-content: center;
 }
