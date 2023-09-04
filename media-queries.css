@@ -116,8 +116,9 @@
     .nav-container {
         width: 90%;
         margin: 0 auto;
-        display: flex;
-        align-items: stretch;
+        display: grid;
+        grid-template-columns: max-content;
+        grid-template-areas: icon;
         /* align-items: center; */
         /* height: 70px; */
     }
@@ -130,6 +131,7 @@
         text-decoration: none;
         color: #fff;
         opacity: .7;
+        grid-area: icon;
 
         transform: var(--img1);
     }
@@ -142,6 +144,7 @@
         /* width: 30px; */
         display: block;
         font-size: 1.3rem;
+        margin-bottom: .2rem;
     }
 
     .dropdown-menu {
