@@ -185,9 +185,9 @@ html {
     cursor: pointer;
 }
 
-.slider__btn:hover {
+/* .slider__btn:hover {
     background: var(--white-color);
-}
+} */
 
 .slider__btn--left {
     left: 10px; /*posición botones con respecto al position absolute*/
