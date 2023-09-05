@@ -312,10 +312,15 @@
        align-items: center;
     }
 
+    .carrito-producto-subtotal {
+        display: none;
+    }
+
     .carrito-producto small {
         text-align: center;
     }
 
+    
     .carrito-acciones {
         gap: 1rem;
         margin: .5rem;
