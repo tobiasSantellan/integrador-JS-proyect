@@ -15,7 +15,7 @@ const botonComprar = d.querySelector("#carrito-acciones-comprar");
 function cargarProductosCarrito () {
 
     if(productosEnCarrito && productosEnCarrito.length > 0) {
-
+ 
         carritoVacio.classList.add("disabled");
         carritoProductos.classList.remove("disabled");
         carritoAcciones.classList.remove("disabled");
@@ -39,10 +39,6 @@ function cargarProductosCarrito () {
             <div class="carrito-producto-precio">
                 <small>Precio</small>
                 <p>$${producto.precio}</p>
-            </div>
-            <div class="carrito-producto-subtotal">
-                <small>Subtotal</small>
-                <p>${producto.precio * producto.cantidad}</p>
             </div>
             <button class="carrito-producto-eliminar" id="${producto.id}"><i class="fa-solid fa-trash-can"></i></button>
             `;

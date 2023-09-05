@@ -12,7 +12,7 @@ const isEmpty = (input) => {
   
 
 const isBetween = (input, min, max) => {
-    return input.value.length >= min && input.value.length < max;
+    return input.value.length >= min && input.value.length < max; 
   };
   
 

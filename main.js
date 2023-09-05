@@ -269,7 +269,7 @@ banners.insertAdjacentElement('afterbegin', sliderSectionLast) //adjudico como p
 
 
 const nextImg = () => {
-    let sliderSectionFirst = document.querySelectorAll('.slide')[0] //pido el primer elemento del contanedor general
+    let sliderSectionFirst = document.querySelectorAll('.slide')[0] //pido el primer elemento del contenedor general
     banners.style.marginLeft = '-190%' //siguiente imagen
     banners.style.transition = 'all 0.5s'
     setTimeout(() => {
