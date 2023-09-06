@@ -269,7 +269,7 @@ banners.insertAdjacentElement('afterbegin', sliderSectionLast) //adjudico como p
 
 
 const nextImg = () => {
-    let sliderSectionFirst = document.querySelectorAll('.slide')[0] //pido el primer elemento del contenedor general
+    let sliderSectionFirst = d.querySelectorAll('.slide')[0] //pido el primer elemento del contenedor general
     banners.style.marginLeft = '-190%' //siguiente imagen
     banners.style.transition = 'all 0.5s'
     setTimeout(() => {
@@ -281,7 +281,7 @@ const nextImg = () => {
 
 
 const prevImg = () => {
-    let sliderSection = document.querySelectorAll('.slide')
+    let sliderSection = d.querySelectorAll('.slide')
     let sliderSectionLast = sliderSection[sliderSection.length -1]
 
     banners.style.marginLeft = '0%' 
